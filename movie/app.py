@@ -29,10 +29,10 @@ except Exception:
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data_sets"  # change if your CSVs are elsewhere
 
-MOVIES_CSV = Path(r"D:\movie\data_set\movies.csv")
-RATINGS_CSV = Path(r"D:\movie\data_set\ratings.csv")
-TAGS_CSV   = Path(r"D:\movie\data_set\tags.csv")
-LINKS_CSV  = Path(r"D:\movie\data_set\links.csv")
+MOVIES_CSV = Path(r"movie/data_set/movies.csv")
+RATINGS_CSV = Path(r"movie/data_set/ratings.csv")
+TAGS_CSV   = Path(r"movie/data_set/tags.csv")
+LINKS_CSV  = Path(r"movie/data_set/links.csv")
 
 
 # -------------------------
@@ -232,4 +232,5 @@ def main():
         traceback.print_exc(file=sys.stdout)
 
 if __name__ == "__main__":
+
     main()
